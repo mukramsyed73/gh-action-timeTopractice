@@ -13,4 +13,4 @@ jobs:
       - name: Install npm
         run: npm ci
       - name: Trigger lint
-        run: npx lint
+        run: npm lint
