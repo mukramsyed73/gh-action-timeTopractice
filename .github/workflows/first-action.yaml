@@ -4,11 +4,11 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      -name: Get Code
-      uses: actions/checkout
-      -name: Get npm
-      uses: actions/setup-node
-      -name: Install npm
-      run: npm ci
-      -name: Trigger lint
-      run: echo ${{toJSON(lint)}}
+      - name: Get Code
+        uses: actions/checkout
+      - name: Get npm
+        uses: actions/setup-node
+      - name: Install npm
+        run: npm ci
+      - name: Trigger lint
+        run: echo ${{toJSON(lint)}}
